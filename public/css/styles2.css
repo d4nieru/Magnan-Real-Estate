@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.bg {
+    background-color: antiquewhite;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Styles pour les boutons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Styles pour les boutons de connexion et de création de compte */
+  .button-login {
+    background-color: #28a745;
+  }
+  
+  .button-create-account {
+    background-color: #ffc107;
+  }
+
+  .button-logout {
+    background-color: #ff2c07;
+  }
+  
+  /* Styles pour rendre la barre de navigation responsive */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .navbar-links {
+      flex-direction: column;
+      align-items: stretch;
+      margin-top: 10px;
+    }
+    
+    .navbar-links li {
+      margin: 10px 0;
+    }
+    
+    .button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .center_property_list {
+
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
